@@ -1,0 +1,50 @@
+html{
+        box-sizing: border-box; 
+}
+header {
+    background-color: lightpink;
+    padding: 10px 0;
+    .container {
+        @include chemicontaineri;
+        // border: 2px solid black;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .logo {
+            font-size: 48px;
+            color: rgb(115, 1, 58);
+        }
+        ul {
+            display: flex;
+            gap: 30px;
+            a {
+                font-size: 36px;
+                color: rgb(115, 1, 58);
+            }
+        }
+    }
+}
+
+.s-1 {
+    background-color: lightgreen;
+    .container {
+        @include chemicontaineri;
+        .wrapper {
+            padding: 100px 0;
+            display: flex;
+            justify-content: space-between;
+            .card1 {
+                @include chemibarati;
+            }
+            .card2 {
+                @include chemibarati;
+            }
+            .card3 {
+                @include chemibarati;
+            }
+        }
+    }
+}
+.footer{
+    width: 1510px;
+}
